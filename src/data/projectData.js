@@ -2,6 +2,7 @@
 import ExploraRImg from "../assets/img-projects/EXPLORAR.png";
 import UniNestImg from "../assets/img-projects/UNINEST.png";
 import RecouImg from "../assets/img-projects/RECOU_LOGOTIPO_blanco.png";
+import SafeCheckImg from "../assets/img-projects/SAFECHECK.png";
 
 export const proyectos = [
   {
@@ -23,7 +24,7 @@ export const proyectos = [
     titulo: "SafeCheck School",
     descripcion:
       "Plataforma web/móvil que integra IoT con sensores MQ-3 y ESP32 para detección de alcohol en estudiantes, con dashboard y alertas en tiempo real.",
-    imagen: UniNestImg.src,
+    imagen: SafeCheckImg.src,
     tecnologias: [
       "Frontend: React",
       "Backend: Node.js (Express)",

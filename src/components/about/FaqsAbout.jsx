@@ -50,7 +50,7 @@ const SkillsList = () => {
       "Tengo experiencia trabajando en equipos multidisciplinarios, encargándome del desarrollo frontend de aplicaciones web. Utilizo metodologías ágiles como Scrum y Kanban, además de Git y GitHub para control de versiones. También uso Trello y Jira para organizar tareas, dar seguimiento y mejorar la colaboración.",
     ],
     "Metodologías ágiles": [
-      "He trabajado con Scrum y Kanban. En Scrum participo en sprints, preparo PRs para revisión y mantengo estándares de calidad antes de integrar cambios. En Kanban organizo el flujo con tableros, moviendo tareas por estados y manteniendo visibilidad del progreso. También participo en dailies para planificar y reportar avances.",
+      "Trabajo con Scrum y Kanban, adaptándome a la dinámica del equipo. En Scrum colaboro en la planificación y ejecución de sprints, desgloso historias en tareas, preparo PRs con descripciones claras y atiendo code reviews cuidando la calidad (lint, pruebas y convenciones) antes de integrar cambios. En Kanban gestiono el flujo con tableros y prioridades, moviendo tareas por estados y manteniendo visibilidad del progreso. Participo en dailies, refinamiento y retrospectivas para alinear avances y mejorar continuamente.",
     ],
   };
 

@@ -15,11 +15,17 @@ const { titulo, imagen, tecnologias, demo, codigo } = Astro.props;
 <div
   class="group flex w-full max-w-md mx-auto flex-col overflow-hidden rounded-xl bg-gray-900 border border-none transition-all hover:scale-[1.015] drop-shadow-[4px_4px_0_#7836cf]"
 >
-  <img
-    src={imagen}
-    alt={`Proyecto: ${titulo}`}
-    class="h-52 p-3 w-full object-cover rounded-2xl"
-  />
+  <div class="p-3">
+    <div class="flex h-52 w-full items-center justify-center overflow-hidden rounded-2xl bg-white/95">
+      <img
+        src={imagen}
+        alt={`Proyecto: ${titulo}`}
+        loading="lazy"
+        decoding="async"
+        class="h-full w-full object-contain"
+      />
+    </div>
+  </div>
 
   <div class="flex flex-col grow p-3">
     <h3 class="text-lg font-semibold mb-2 text-white drop-shadow-[1px_1px_0_#7836cf]">{titulo}</h3>
