@@ -5,11 +5,13 @@ export interface Props {
   titulo: string;
   imagen: string;
   tecnologias: string[];
-  demo: string;
+  demo?: string;
   codigo: string;
 }
 
-const { titulo, imagen, tecnologias, demo, codigo } = Astro.props;
+const { titulo, imagen, tecnologias, demo = "", codigo } = Astro.props;
+
+const hasDemo = typeof demo === "string" && demo.trim() !== "" && demo.trim() !== "#";
 ---
 
 <div
@@ -41,14 +43,18 @@ const { titulo, imagen, tecnologias, demo, codigo } = Astro.props;
     </div>
 
     <div class="mt-auto flex justify-between gap-3">
-      <a
-        href={demo}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="w-full text-center border border-[#7836cf] text-[#7836cf] py-1.5 rounded-md text-sm font-semibold hover:bg-[#7836cf] hover:text-gray-900 transition-colors"
-      >
-        Demo
-      </a>
+      {
+        hasDemo && (
+          <a
+            href={demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full text-center border border-[#7836cf] text-[#7836cf] py-1.5 rounded-md text-sm font-semibold hover:bg-[#7836cf] hover:text-gray-900 transition-colors"
+          >
+            Demo
+          </a>
+        )
+      }
 
       <a
         href={codigo}
