@@ -3,13 +3,14 @@ import {
   FaLinkedinIn,
   FaGithub,
   FaInstagram,
+  FaThreads,
 } from "react-icons/fa6";
 
 const SocialIcons = () => {
   return (
     <div className="my-5 flex items-center justify-center">
       <a
-        href="https://www.linkedin.com/in/lautaro-rodr%C3%ADguez-collins-40505624a/"
+        href="https://www.linkedin.com/in/miguelangel-lopez-551a163a5/"
         target="_blank"
         rel="noopener noreferrer"
         className="mr-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
@@ -19,7 +20,7 @@ const SocialIcons = () => {
       </a>
 
       <a
-        href="https://github.com/Lautaro-R-collins"
+        href="https://github.com/MiguelAngelLH"
         target="_blank"
         rel="noopener noreferrer"
         className="mx-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
@@ -29,23 +30,33 @@ const SocialIcons = () => {
       </a>
 
       <a
-        href="https://x.com/lautarodevelops/"
+        href="https://x.com/MiguelAnge09LH"
         target="_blank"
         rel="noopener noreferrer"
         className="mx-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
-        aria-label="Twitter"
+        aria-label="X"
       >
         <FaXTwitter className="h-7 w-7" />
       </a>
 
       <a
-        href="https://www.instagram.com/lautarodevelops/"
+        href="https://www.instagram.com/miguel090304?igsh=NzQ2cHkzN3kyaTB0"
         target="_blank"
         rel="noopener noreferrer"
         className="mx-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
         aria-label="Instagram"
       >
         <FaInstagram className="h-7 w-7" />
+      </a>
+
+      <a
+        href="https://www.threads.com/@miguel090304"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="ml-3 text-zinc-400 hover:text-[#69c7c7] drop-shadow-[1px_1px_0_#7836cf]"
+        aria-label="Threads"
+      >
+        <FaThreads className="h-7 w-7" />
       </a>
     </div>
   );
