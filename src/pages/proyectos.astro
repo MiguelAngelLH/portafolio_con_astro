@@ -5,10 +5,12 @@ import Hero from "../components/commons/hero/hero.astro";
 import ProjectCard from "../components/project/proyectCard.astro";
 import Banner from "../components/commons/banners/banner.astro";
 import { proyectos } from "../data/projectData.js";
+
+import { construirTitulo, TITULOS_PAGINA } from "../data/titulosPaginas";
 ---
 
-<Layout title="Proyectos" description="Proyectos">
-  <Hero titulo="Proyectos" />
+<Layout tituloPagina={TITULOS_PAGINA.proyectos} description="Algunos de mis proyectos y trabajos recientes.">
+  <Hero titulo={construirTitulo(TITULOS_PAGINA.proyectos)} />
 
   <!-- Botones -->
   <div class="mt-6 mb-6 flex flex-wrap justify-center gap-3 px-2">

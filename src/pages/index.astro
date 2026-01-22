@@ -6,9 +6,11 @@ import AboutHome from "../components/home/aboutHome/aboutHome.astro";
 import HomeProyect from "../components/home/homeProyect/homeProyect.astro";
 import FAQS from "../components/home/faqs/faqs.jsx";
 import Banner from "../components/commons/banners/banner.astro";
+
+import { TITULOS_PAGINA } from "../data/titulosPaginas";
 ---
 
-<Layout>
+<Layout tituloPagina={TITULOS_PAGINA.inicio} description="Portafolio personal: proyectos, experiencia y contacto.">
   <Header />
   <Slider />
   <AboutHome />

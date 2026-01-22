@@ -1,8 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import { TITULOS_PAGINA } from "../data/titulosPaginas";
 ---
 
-<Layout title="404" description="Error 404 - Page not found" noindex={true}>
+<Layout tituloPagina={TITULOS_PAGINA.noEncontrado} description="Error 404 - Page not found" noindex={true}>
   <section
     class="bg-gray-900 min-h-screen flex flex-col items-center justify-center px-6 text-center"
   >

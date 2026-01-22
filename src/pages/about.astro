@@ -8,10 +8,12 @@ import Skills from "../components/about/skills.astro";
 import FaqsAbout from "../components/about/FaqsAbout.jsx";
 import BannerGithub from "../components/about/bannerGithub.astro";
 import Banner from "../components/commons/banners/banner.astro";
+
+import { construirTitulo, TITULOS_PAGINA } from "../data/titulosPaginas";
 ---
 
-<Layout title="about" description="about">
-  <Hero titulo="Sobre Mi" />
+<Layout tituloPagina={TITULOS_PAGINA.sobreMi} description="Conoce más sobre mí y mi experiencia.">
+  <Hero titulo={construirTitulo(TITULOS_PAGINA.sobreMi)} />
   <AboutMe />
   <Experience />
   <Features />
